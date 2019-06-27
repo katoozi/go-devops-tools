@@ -38,7 +38,7 @@ func (a *AuthBasic) AuthorizationHeader() string {
 }
 
 func (auth *AuthToken) AuthorizationHeader() string {
-	return fmt.Sprintf("toekn %s", auth.Token)
+	return fmt.Sprintf("token %s", auth.Token)
 }
 
 type Authentication interface {
